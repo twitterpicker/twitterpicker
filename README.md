@@ -1,16 +1,22 @@
-### Hi there 👋
+# Developer Documentation
 
-<!--
-**twitterpicker/twitterpicker** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+The product has a cluster of two core backend services running, that rely on one storage layer.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+# **Backend Services:** 
+
+ - **Internal API :** 
+	 
+	  - Endpoint :  `/api/get-winner/${tweetID}`
+	  - returns **winner stored in database** or **error object** if no winner found.
+	
+	  
+	
+
+ - **Direct Message server :** 
+	 -	
+	 - Intercepts user's message to the bot account.
+	 - detects the **"tweetID"** from the **"tweet status URL"**
+	 - gets the winner from the storage layer, using the **"internal API"**
+	 - send message about the winner of the giveaway to the user
+	 
