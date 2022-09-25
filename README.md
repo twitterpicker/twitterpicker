@@ -3,17 +3,17 @@
 </p>
 
 # Picker
-## Showcase & Documentation
 
 
 
 
-# Developer Documentation
+
+## Developer Documentation
 
 
 The product has a cluster of two core backend services running, that rely on one storage layer.
 
-# **Backend Services:** 
+## **Backend Services:** 
 
  - **Internal API :** 
 	 
